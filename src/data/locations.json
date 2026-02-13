@@ -1,0 +1,262 @@
+[
+    {
+        "id": "lagos",
+        "primary_intent": "parasailing",
+        "name": "Lagos",
+        "country": "Portugal",
+        "region": "Algarve",
+        "coordinates": {
+            "lat": 37.1028,
+            "lng": -8.6730
+        },
+        "parasailing": {
+            "operator_angle": {
+                "best_season": "Jun–Sep",
+                "conditions_note": "Mornings are typically smoother; afternoons can get gustier depending on the day.",
+                "safety_note": "If wind feels borderline, treat it as a no-go for first-timers. Stable conditions beat thrill-seeking.",
+                "who_its_for": [
+                    "first-timers",
+                    "couples",
+                    "families"
+                ]
+            }
+        },
+        "things_to_do": [
+            "Walk Ponta da Piedade cliff trails",
+            "Boat caves tour (Benagil day trip if possible)",
+            "Old town restaurants at sunset"
+        ],
+        "best_views": [
+            "Ponta da Piedade",
+            "Meia Praia coastline"
+        ],
+        "faqs": [
+            {
+                "question": "Is parasailing safe for beginners here?",
+                "answer": "Yes, when conditions are stable. Choose operators who cancel on borderline wind days rather than push through."
+            },
+            {
+                "question": "What should I bring?",
+                "answer": "Swimwear, towel, sunscreen, and a secure strap for sunglasses if you wear them."
+            }
+        ],
+        "sources": [
+            {
+                "type": "expert",
+                "name": "Parasailing operator (Joao Sampaio)",
+                "date": "2026-02-13"
+            }
+        ]
+    },
+    {
+        "id": "vilamoura",
+        "primary_intent": "parasailing",
+        "name": "Vilamoura",
+        "country": "Portugal",
+        "region": "Algarve",
+        "coordinates": {
+            "lat": 37.0686,
+            "lng": -8.1253
+        },
+        "parasailing": {
+            "operator_angle": {
+                "best_season": "May–Sep",
+                "conditions_note": "Marina shelters from swells; winds are typically steady and manageable. July-August conditions can be more consistent than early season.",
+                "safety_note": "Marina operations run professional courses; conditions are reliably monitored. Ideal for building confidence.",
+                "who_its_for": [
+                    "first-timers",
+                    "couples",
+                    "families",
+                    "intermediate"
+                ]
+            }
+        },
+        "things_to_do": [
+            "Marina promenade stroll with yacht spotting (world-class sailing hub)",
+            "Championship golf at Pinhal Golf Club, Ocean Golf Club, and Vilamoura Golf Academy",
+            "Beach clubs and water sports (jet skiing, diving, boat rentals)",
+            "Praia da Falesia dramatic red-cliff beaches nearby",
+            "Armação de Pêra fishing village exploration (15 min drive)",
+            "Cerro da Torre viewpoint for panoramic coastline views"
+        ],
+        "best_views": [
+            "Marina waterfront at golden hour",
+            "Paramotor/parasail views of yacht-filled harbor",
+            "Praia da Falesia cliffs from above",
+            "Sunset over the Atlantic from marina promenade"
+        ],
+        "faqs": [
+            {
+                "question": "Is Vilamoura better for beginners than Lagos?",
+                "answer": "Yes, in many ways. The marina provides protected launch conditions and professional infrastructure. Wind patterns are steadier due to the coastline orientation, and you have calmer water for learning."
+            },
+            {
+                "question": "What's the parasailing season like here?",
+                "answer": "May through September is reliable. April and October can work but are less consistent. Summer (July–August) offers the most predictable conditions but attracts more tourists."
+            },
+            {
+                "question": "What makes Vilamoura unique for parasailing?",
+                "answer": "The marina acts as a windbreak and launch platform. You get steady conditions without the dramatic cliffs of Lagos, making it ideal for technique-focused sessions. Perfect for couples or families wanting reliability over spectacle."
+            },
+            {
+                "question": "Are there other water sports here?",
+                "answer": "Yes—jet skiing, boat rentals, windsurfing, and diving are all available. The marina is a full-service water sports hub with professional operators."
+            },
+            {
+                "question": "How far is Vilamoura from other beach towns?",
+                "answer": "Lagos is 45 min west; Albufeira is 30 min east. Easy day trips to explore other Algarve locations."
+            }
+        ],
+        "sources": [
+            {
+                "type": "geographic",
+                "name": "Vilamoura Marina Geographic Data",
+                "date": "2026-02-13"
+            },
+            {
+                "type": "expert",
+                "name": "Parasailing operator (Joao Sampaio)",
+                "date": "2026-02-13"
+            }
+        ]
+    },
+    {
+        "id": "albufeira",
+        "primary_intent": "parasailing",
+        "name": "Albufeira",
+        "country": "Portugal",
+        "region": "Algarve",
+        "coordinates": {
+            "lat": 37.0867,
+            "lng": -8.2524
+        },
+        "parasailing": {
+            "operator_angle": {
+                "best_season": "May–Sep",
+                "conditions_note": "Sandy beach base with moderate swell exposure. Winds pick up in afternoons; mornings offer the best conditions. Summer trade winds are reliable.",
+                "safety_note": "Beach-based operations are common here. Prioritize operators with clear wind-monitoring protocols. Mid-summer can get crowded.",
+                "who_its_for": [
+                    "first-timers",
+                    "couples",
+                    "families",
+                    "intermediate"
+                ]
+            }
+        },
+        "things_to_do": [
+            "Old town exploring (Cidade Velha historic core)",
+            "Beach clubs and water sports at Praia da Oura",
+            "Câmara Municipal viewpoint for panoramic coast views",
+            "Surrounding beach exploration (Praia do Peneco, Praia de São Rafael)",
+            "Nearby Aripal fishing village day trip"
+        ],
+        "best_views": [
+            "Old town red-rock formations",
+            "Praia da Oura from the air",
+            "Surrounding coastline cliffs"
+        ],
+        "faqs": [
+            {
+                "question": "How is parasailing different in Albufeira vs. Lagos?",
+                "answer": "Albufeira is more sheltered and less dramatic. Conditions are steadier but you lose some of the cliff spectacle. Great for focusing on the sport rather than scenery adrenaline."
+            },
+            {
+                "question": "What time of day is best?",
+                "answer": "Early morning (7–10 AM) offers the smoothest water and lightest winds. Afternoon sessions can be windier and choppier, especially July–August."
+            },
+            {
+                "question": "Is Albufeira crowded in summer?",
+                "answer": "Yes—very much so. June, July, and August see peak tourism. May and September offer better conditions with fewer people."
+            },
+            {
+                "question": "Are lifeguards present on the beaches?",
+                "answer": "Yes, flagged beaches are monitored seasonally (May–September). Always launch from supervised zones."
+            }
+        ],
+        "sources": [
+            {
+                "type": "geographic",
+                "name": "Albufeira Coastal Data",
+                "date": "2026-02-13"
+            },
+            {
+                "type": "expert",
+                "name": "Parasailing operator (Joao Sampaio)",
+                "date": "2026-02-13"
+            }
+        ]
+    },
+    {
+        "id": "portimao",
+        "primary_intent": "parasailing",
+        "name": "Portimão",
+        "country": "Portugal",
+        "region": "Algarve",
+        "coordinates": {
+            "lat": 37.1409,
+            "lng": -8.5360
+        },
+        "parasailing": {
+            "operator_angle": {
+                "best_season": "May–Oct",
+                "conditions_note": "River mouth location offers protection from Atlantic swell while maintaining steady wind. Mornings are glassy; afternoon trades pick up reliably. More consistent than coastal beaches.",
+                "safety_note": "River-based launches provide calm water starts. Professional operators monitor tidal conditions. Excellent for building skills in protected waters.",
+                "who_its_for": [
+                    "first-timers",
+                    "couples",
+                    "families",
+                    "intermediate",
+                    "advanced"
+                ]
+            }
+        },
+        "things_to_do": [
+            "Ponta da Piedade boat tours (20 min drive to Lagos)",
+            "Silves Castle exploration (30 min inland)",
+            "Arade River yacht cruises and restaurant boats",
+            "Praia da Rocha beach promenade with bars and restaurants",
+            "Fish market (Mercado Municipal) at dawn",
+            "Benagil Cave day trip (40 min drive)"
+        ],
+        "best_views": [
+            "Arade River from parasail altitude",
+            "Praia da Rocha dramatic red cliffs",
+            "Sunset over the river mouth",
+            "Atlantic horizon from above the coastline"
+        ],
+        "faqs": [
+            {
+                "question": "What makes Portimão unique for parasailing?",
+                "answer": "The Arade River mouth provides the calmest launch conditions in the Algarve. You get steady Atlantic winds without heavy swell, making it ideal for practicing technique in protected waters. Perfect for intermediate riders."
+            },
+            {
+                "question": "How does the river affect parasailing?",
+                "answer": "The river offers tidal advantages. High tide creates smoother water; low tide can be choppier. Operators coordinate launches around tidal cycles for optimal conditions."
+            },
+            {
+                "question": "Is Portimão less crowded than Lagos or Albufeira?",
+                "answer": "Yes, significantly. It's a working port town, not primarily a beach resort. You'll find professional operators but fewer tourists, especially outside peak summer."
+            },
+            {
+                "question": "What's the best time of year?",
+                "answer": "May-October is reliable. September-October offer great conditions with lower crowds than summer peak. The extended season (into October) is a major advantage over western coast locations."
+            },
+            {
+                "question": "Can I combine parasailing with other activities?",
+                "answer": "Absolutely. Day-trip to Benagil Cave, explore Silves Castle, or do a river boat cruise. Portimão works as a base to access western Algarve attractions."
+            }
+        ],
+        "sources": [
+            {
+                "type": "geographic",
+                "name": "Arade River & Portimão Coastal Data",
+                "date": "2026-02-13"
+            },
+            {
+                "type": "expert",
+                "name": "Parasailing operator (Joao Sampaio)",
+                "date": "2026-02-13"
+            }
+        ]
+    }
+]
