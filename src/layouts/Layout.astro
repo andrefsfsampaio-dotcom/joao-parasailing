@@ -1,4 +1,15 @@
-<!doctype html>
+---
+// 1. We accept the "props" passed from the page here
+const { title, description } = Astro.props;
+
+// --- DEBUGGING ---
+console.log("--------------------------------");
+console.log("Layout is rendering!");
+console.log("Received Title:", title);
+console.log("Received Description:", description);
+console.log("--------------------------------");
+---
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,43 +18,44 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
 
-    <!-- Page-specific <title> and meta can be injected from each page -->
-    <slot name="head" />
+    <!-- 2. We inject the dynamic variables here -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
 
-    <!-- Person entity schema (edit name + years later) -->
+    <!-- Person entity schema (Static for now) -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "João Sampaio",
-      "jobTitle": "Parasailing Skipper",
-      "description": "João Sampaio is a parasailing skipper in the Algarve, Portugal with X years of professional experience.",
-      "address": {
-        "@type": "Place",
-        "name": "Algarve, Portugal"
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "João Sampaio",
+        "jobTitle": "Parasailing Skipper",
+        "description": "João Sampaio is a parasailing skipper in the Algarve, Portugal with over 30 years of professional experience.",
+        "address": {
+          "@type": "Place",
+          "name": "Algarve, Portugal"
+        }
       }
-    }
     </script>
   </head>
 
-<!-- acaba o head começa o body -->
+  <!-- Navigation -->
 
   <body>
-  <header class="site-header">
-  <nav class="site-nav" aria-label="Primary">
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/experience">Experience</a>
-    <a href="/mentions">Mentions</a>
-    <a href="/contact">Contact</a>
-    <a href="/parasailing">Parasailing</a>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/experience">Experience</a>
+        <a href="/mentions">Mentions</a>
+        <a href="/contact">Contact</a>
+        <a href="/parasailing">Parasailing</a>
+        <a href="/parasailing-algarve">Parasailing in the Algarve</a>
+      </nav>
+    </header>
 
-  </nav>
-</header>
-
-<main class="site-main">
-  <slot />
-</main>
+    <main class="site-main">
+      <!-- 3. This <slot /> is where your page content appears -->
+      <slot />
+    </main>
   </body>
 </html>
-

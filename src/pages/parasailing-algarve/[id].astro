@@ -4,37 +4,40 @@ import locations from "../../data/locations.json";
 
 // This tells Astro which pages to generate
 export function getStaticPaths() {
-  return locations.map((loc) => ({
-    params: { id: loc.id },
-    props: { loc }
-  }));
+return locations.map((loc) => ({
+params: { id: loc.id },
+props: { loc }
+}));
 }
 
 // This receives the location data for the current page
 const { loc } = Astro.props;
 
 if (!loc) {
-  throw new Error("Location not found");
+throw new Error("Location not found");
 }
+
 // Safety helpers so .map never crashes if a field is missing
-const whoItsFor = loc.parasailing?.who_its_for ?? [];
+const operatorData = loc.parasailing?.operator_angle || {};
+const whoItsFor = operatorData.who_its_for ?? [];
+const bestSeason = operatorData.best_season;
+const conditions = operatorData.conditions_note;
+const safety = operatorData.safety_note;
+
 const thingsToDo = loc.things_to_do ?? [];
 const bestViews = loc.best_views ?? [];
 const faqs = loc.faqs ?? [];
 const sources = loc.sources ?? [];
----
-<Layout
-  title={`Parasailing in ${loc.name} | Algarve Guide`}
-  description={`Parasailing in ${loc.name}: best season, conditions, safety notes, and what to do nearby.`}
->
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Parasailing in {loc.name}</title>
-  </head>
 
-  <body>
-       <p><a href="/parasailing-algarve">← Back to Algarve Guide</a></p>
+// page title and description using the location name
+
+const pageTitle = `Parasailing in ${loc.name} | Algarve Guide afaf`;
+const pageDescription = `Parasailing in ${loc.name}: Best season is ${bestSeason || 'Summer'}. Check conditions, safety
+notes, and what to do nearby.`;
+---
+<Layout title={pageTitle} description={pageDescription}>
+
+  <p><a href="/parasailing-algarve">← Back to Algarve Guide</a></p>
 
   <h1>Parasailing in {loc.name}</h1>
 
@@ -42,63 +45,61 @@ const sources = loc.sources ?? [];
   <p><strong>Country:</strong> {loc.country}</p>
 
   <h2>Best season</h2>
-  <p>{loc.parasailing?.best_season}</p>
+  <p>{bestSeason}</p>
 
   <h2>Conditions</h2>
-  <p>{loc.parasailing?.conditions_note}</p>
+  <p>{conditions}</p>
 
   <h2>Safety note</h2>
-  <p>{loc.parasailing?.safety_note}</p>
+  <p>{safety}</p>
 
   {whoItsFor.length > 0 && (
-    <>
-      <h2>Who it’s for</h2>
-      <ul>
-        {whoItsFor.map((t) => <li>{t}</li>)}
-      </ul>
-    </>
+  <>
+    <h2>Who it's for</h2>
+    <ul>
+      {whoItsFor.map((t) => <li>{t}</li>)}
+    </ul>
+  </>
   )}
 
   {thingsToDo.length > 0 && (
-    <>
-      <h2>Things to do nearby</h2>
-      <ul>
-        {thingsToDo.map((x) => <li>{x}</li>)}
-      </ul>
-    </>
+  <>
+    <h2>Things to do nearby</h2>
+    <ul>
+      {thingsToDo.map((x) => <li>{x}</li>)}
+    </ul>
+  </>
   )}
 
   {bestViews.length > 0 && (
-    <>
-      <h2>Best views</h2>
-      <ul>
-        {bestViews.map((x) => <li>{x}</li>)}
-      </ul>
-    </>
+  <>
+    <h2>Best views</h2>
+    <ul>
+      {bestViews.map((x) => <li>{x}</li>)}
+    </ul>
+  </>
   )}
 
   {faqs.length > 0 && (
+  <>
+    <h2>FAQs</h2>
+    {faqs.map((f) => (
     <>
-      <h2>FAQs</h2>
-      {faqs.map((f) => (
-        <>
-          <h3>{f.question}</h3>
-          <p>{f.answer}</p>
-        </>
-      ))}
+      <h3>{f.question}</h3>
+      <p>{f.answer}</p>
     </>
+    ))}
+  </>
   )}
 
   {sources.length > 0 && (
-    <>
-      <h2>Sources</h2>
-      <ul>
-        {sources.map((s) => (
-          <li>{s.type}: {s.name} ({s.date})</li>
-        ))}
-      </ul>
-    </>
+  <>
+    <h2>Sources</h2>
+    <ul>
+      {sources.map((s) => (
+      <li>{s.type}: {s.name} ({s.date})</li>
+      ))}
+    </ul>
+  </>
   )}
 </Layout>
-  </body>
-</html>
