@@ -1,3 +1,7 @@
+############## THIS PROJECT IS NOT BEING DEVELOPED ANYMORE #################
+
+##############   My other projects are private repos, if you are interested in them reach out :D  #################
+
 # Astro Starter Kit: Basics
 
 ```sh
